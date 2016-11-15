@@ -1,0 +1,34 @@
+<div class="product-content infographics">
+&lt;style scoped&gt;
+.pull-right{margin: 0 3px;}
+p strong{ display:inline; }
+h3{font-weight:bold;font-size:18px;}
+&lt;/style&gt;
+
+
+<div class="<%=@img1%>">
+
+<a href="" data-toggle="modal" data-target=".bs-example-modal-lg">
+<img title="<%=@title1%>" alt="<%=@alt1%>"
+src="/images/india/infographic/<%=@name1%><%=@img2%>" lazyload="false">
+</a>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="container">
+<div class="close">
+<button type="button" class="btn" data-dismiss="modal" id="closeExitBlockerModal" aria-hidden="true">
+Close
+</button>
+</div>
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body">
+<img class="img-responsive lazy" title="<%=@titles%>" alt="<%=@alts%>" src="/images/india/infographic/<%=@names%><%=@img2%>">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>

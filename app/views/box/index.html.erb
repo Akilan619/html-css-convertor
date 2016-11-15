@@ -1,0 +1,47 @@
+
+<div class="col-md-12">
+ <div class="col-md-6">
+<h1 class="color:crimson;">Colour Box</h1>
+<%= form_tag url_for(:controller=>"box",:action =>"template"),remote:true  do %>
+<%= label_tag("Center Alignment:")%><%= check_box_tag 'alignment'%><br>
+<%= label_tag(:color, "Blue:")%><%= check_box_tag 'blue'%> | <%= label_tag(:color, "Green:")%><%= check_box_tag 'green'%> | 
+<%= label_tag(:color, "Orange:")%><%= check_box_tag 'orange', 'yes', true%>
+
+<p></p>
+<%= label_tag("Text:")%>&nbsp;&nbsp;&nbsp;&nbsp;<%= text_field(:text, nil)%><br>
+<p></p>
+<%= label_tag("href url:")%><%= text_field(:link, nil)%><br>
+<p></p>
+<%= label_tag("Mouse hover Text:")%><%= text_field(:text2, nil)%><br>
+<p></p>
+<%= label_tag("Anchor Text:")%><%= text_field(:text3, nil)%><br>
+
+ <%= submit_tag 'Submit'%>
+ <%end%>
+
+ <%= form_tag url_for(:controller=>"box",:action =>"textbox"),remote:true  do %>
+
+ <h1>Color Text Box</h1>
+<%= label_tag("Center Alignment:")%><%= check_box_tag 'alignment1'%><br>
+<%= label_tag(:color, "Blue:")%><%= check_box_tag 'blue'%> | <%= label_tag(:color, "Green:")%><%= check_box_tag 'green'%> | 
+<%= label_tag(:color, "Orange:")%><%= check_box_tag 'orange'%><br>
+
+<%= label_tag("Text :")%><%= text_field(:texts, nil)%><br>
+ <%= submit_tag 'Submit'%>
+ <%end%>
+ </div>
+ 
+  <div class="col-md-6">
+  <div class="clearfix"></div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <h1 class="text-center">OUTPUT:</h1>
+  <p></p>
+<div id="tot">
+ <textarea class="akil" style="width:600px; height:600px;">
+</textarea>
+</div>
+ </div>
+ </div>
+
