@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
- 
+ root :to => "box#index"
 
   get '/box' => 'box#index'
   post '/table' => 'box#template'
