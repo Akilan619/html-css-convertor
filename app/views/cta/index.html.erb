@@ -1,24 +1,18 @@
 <div class="col-md-12">
  <div class="col-md-6">
-<%= form_tag url_for(:controller=>"cta",:action =>"button"),remote:true  do %>
-
-<h1>Disqus Button</h1>
-<%= label_tag("Disqus CTA Button : ")%><%=check_box_tag 'disqus'%>&nbsp;&nbsp;&nbsp;
-<%= submit_tag 'Submit'%><br>
-
- <p></p>
- <p></p>
- <%end%>
  
  
  <%= form_tag url_for(:controller=>"cta",:action =>"normal"),remote:true  do %>
- <h1>CTA Button For Bank Product Pages</h1>
+ <h1>CTA Button For Bank Product and Tiled Landing Pages</h1>
  <%= label_tag("Left CTA Button : ")%><%=check_box_tag 'disqus'%> | <%= label_tag("Right CTA Button : ")%><%=check_box_tag 'disqus1'%> |
  <%= label_tag("Default CTA Button : ")%><%=check_box_tag 'disqus2'%> <br>
  <%= label_tag("href url:")%><%= text_field(:link, nil)%><br>
- <%= label_tag("Anchor Text:")%><%= text_field(:text, nil)%><br>
- <%= label_tag("Mouse Hower Text:")%><%= text_field(:text1, nil)%><br>
- <%= submit_tag 'Submit'%><br>
+ <%= label_tag("Anchor Text:")%><%= text_field(:text1, nil)%><br>
+ <%= label_tag("Mouse Hower Text:")%><%= text_field(:text, nil)%><br>
+ 
+<div class="text-center">
+  <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ </div><br>
  
  <p></p>
  <p></p>
@@ -28,15 +22,30 @@
    
  <p></p>
  <p></p>
-   <h1>CTA Button For Tiled Landing Pages</h1>
+   <h1>CTA Button (Near to texts)</h1>
  <%= label_tag("Left CTA Button : ")%><%=check_box_tag 'disqus3'%> | <%= label_tag("Right CTA Button : ")%><%=check_box_tag 'disqus4'%> |
  <%= label_tag("Default CTA Button : ")%><%=check_box_tag 'disqus5'%> <br>
  <%= label_tag("href url:")%><%= text_field(:linkss, nil)%><br>
  <%= label_tag("Anchor Text:")%><%= text_field(:textss, nil)%><br>
  <%= label_tag("Mouse Hower Text:")%><%= text_field(:textss, nil)%><br>
- <%= submit_tag 'Submit'%>
- 
+<div class="text-center">
+  <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ </div>
+  <p></p>
+ <p></p>
   <%end%>
+  
+  <%= form_tag url_for(:controller=>"cta",:action =>"button"),remote:true  do %>
+
+<h1>Disqus Button</h1>
+<%= label_tag("Disqus CTA Button : ")%><%=check_box_tag 'disqus'%>&nbsp;&nbsp;&nbsp;
+
+  <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ <br>
+
+
+ <%end%>
+
   </div>
 
  <div class="col-md-6">
@@ -44,7 +53,7 @@
    <h1 class="text-center">OUTPUT:</h1>
   <p></p>
 <div id="tot">
- <textarea class="akil" style="width:600px; height:650px;">
+ <textarea class="akil" style="width:700px; height:800px;">
 </textarea>
 </div>
  </div>

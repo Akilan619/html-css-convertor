@@ -12,15 +12,17 @@
  <%= label_tag("href url: /images/india/infographic/")%><%= text_field(:linki, nil)%> <%= label_tag(".png: ")%><%=check_box_tag 'pngs1'%> | <%= label_tag(".jpg: ")%><%=check_box_tag 'jpgs1'%><br>
  <%= label_tag("Alt Text:")%>&nbsp;<%= text_field(:alts, nil)%><br>
  <%= label_tag("Title Text:")%>&nbsp;<%= text_field(:titles, nil)%><br>
- <%= submit_tag 'Submit'%><br>
+<div class="text-center">
+  <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ </div><br>
 
 <%end%>
 
 <%= form_tag url_for(:controller=>"img",:action =>"thumbinfo"),remote:true  do %>
 
-<h2>Image updation</h2>
+<h2>Image updation - 2</h2><br>
 
-<h3><strong>Thumb Info Image</strong></h3>
+<p><strong>Thumb Image Info</strong></p>
 
  <%= label_tag("Left CTA Button : ")%><%=check_box_tag 'disqus9'%> | <%= label_tag("Right CTA Button : ")%><%=check_box_tag 'disqus10'%> |
  <%= label_tag("Default Center CTA Button : ")%><%=check_box_tag 'disqus11'%> <br>
@@ -30,12 +32,14 @@
  <%= label_tag("Alt Text:")%>&nbsp;<%= text_field(:altss1, nil)%><br>
  <%= label_tag("Title Text:")%>&nbsp;<%= text_field(:titless1, nil)%><br>
  
- <h3><strong>Big Info Image</strong></h3>
+ <p><strong>Big Image Info</strong></p>
  
  <%= label_tag("href url: /images/india/infographic/")%><%= text_field(:linkii, nil)%><%= label_tag(".png: ")%><%=check_box_tag 'pngs'%> | <%= label_tag(".jpg: ")%><%=check_box_tag 'jpgs'%><br>
  <%= label_tag("Alt Text:")%>&nbsp;<%= text_field(:altsi, nil)%><br>
  <%= label_tag("Title Text:")%>&nbsp;<%= text_field(:titlesi, nil)%><br>
- <%= submit_tag 'Submit'%><br>
+<div class="text-center">
+  <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ </div><br>
  
  
 
@@ -48,7 +52,7 @@
    <h1 class="text-center">OUTPUT:</h1>
   <p></p>
 <div id="tot">
- <textarea class="akil" style="width:600px; height:650px;">
+ <textarea class="akil" style="width:700px; height:1000px;">
 </textarea>
 </div>
 

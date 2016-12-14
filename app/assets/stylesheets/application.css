@@ -47,7 +47,7 @@ body {
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ **************************************************************************************************************************************<%= label_tag(:color, "Orange:")%><%= check_box_tag 'orange', 'yes', true%>
  *= require_tree .
  *= require_self
  */
@@ -173,7 +173,7 @@ body {
 
 /* ####################################################################### */
 
-
+  
 
 /*!
  * Bootstrap v3.3.2 (http://getbootstrap.com)

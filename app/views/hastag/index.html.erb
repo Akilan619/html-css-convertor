@@ -1,0 +1,44 @@
+ <%= form_tag url_for(:controller=>"hastag",:action =>"hast"),remote:true  do %>
+<div class="col-md-12">
+ 
+ 
+ <h1>Hash Tag</h1>
+<p><strong> <%= label_tag(:color, "Bullet List...[li]")%></strong><%= check_box_tag 'list'%> | 
+<strong> <%= label_tag(:color, "Table List..[td]")%></strong><%= check_box_tag 'table'%></p>
+<p></p><br>
+
+<div class="col-md-4">
+<%= text_field(:collapse1, nil)%><br><%= text_field(:collapse2, nil)%><br><%= text_field(:collapse3, nil)%><br>
+<%= text_field(:collapse4, nil)%><br><%= text_field(:collapse5, nil)%><br><%= text_field(:collapse6, nil)%><br>
+
+</div>
+
+<div class="col-md-4">
+<%= text_field(:collapse11, nil)%><br><%= text_field(:collapse21, nil)%><br><%= text_field(:collapse31, nil)%><br>
+<%= text_field(:collapse41, nil)%><br><%= text_field(:collapse51, nil)%><br><%= text_field(:collapse61, nil)%><br>
+
+</div>
+<div class="col-md-4">
+<%= text_field(:collapse12, nil)%><br><%= text_field(:collapse22, nil)%><br><%= text_field(:collapse32, nil)%><br>
+<%= text_field(:collapse42, nil)%><br><%= text_field(:collapse52, nil)%><br><%= text_field(:collapse62, nil)%><br>
+
+</div>
+<p></p><br><p></p>
+</div>
+    <div class="text-center">
+    <%= submit_tag 'Submit', class: "btn-submit btn btn-primary"%>
+ </div>
+ <%end%>
+ 
+ 
+
+<div class="col-md-12">
+  <h1>OUTPUT:</h1>
+  <p></p>
+<div id="tot">
+ <textarea class="akil" style="width:1480px; height:650px;">
+  </textarea>
+
+ </div>
+ </div>
+ 

@@ -11,7 +11,7 @@ class BoxController < ApplicationController
             @div="blue"
         elsif params[:green]=="1"
             @div="green"
-           elsif params[:orange]=="yes"
+           elsif params[:orange]=="1"
             @div="orange"
         end
         puts params[:text]
