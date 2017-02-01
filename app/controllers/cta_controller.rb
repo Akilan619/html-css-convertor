@@ -2,9 +2,14 @@ class CtaController < ApplicationController
   def index
         end
         def button
+if params[:disqus]=="1"
+@dd="<div class="row btm-pad product-landing-btn-block"><div class="col-md-12 link-section"><a href="#disqus_thread" title="Add your Comments" class="animation-target">Add your Comments</a></div></div>"
+  elsif params[:ctaa]=="1"
+            @aa= "<div class="row btm-pad product-landing-btn-block"> <div class="col-md-12 link-section"> <span><a title="Search for Life Insurance" href="${firstInsuranceLink}/insurance/life-insurance.html">Search for Life Insurance &gt;&gt;</a></span> </div> </div>"
+  elsif params[:ctab]=="1"
+            @bb= "<div class="row btm-pad product-landing-btn-block"> <div class="col-md-12 link-section"> <span><a title="Search for Term Insurance" href="${firstInsuranceLink}/insurance/life-insurance.html">Search for Term Insurance &gt;&gt;</a></span> </div> </div>"
 
-puts params[:disqus]
-
+end
         end
         def normal
             
